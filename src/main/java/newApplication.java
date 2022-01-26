@@ -9,12 +9,13 @@ public class newApplication {
 
         System.out.println(fido.getName());
         System.out.println(rover.getName());
-        fido.speak();
+        //fido.speak();
         List<String> str = new ArrayList<>();
         List<Animal> animals = new ArrayList<>();
         animals.add(fido);
         animals.add(rover);
         animals.add(new Cat());
+        animals.add(new SmallDog("Barry"));
 
         //below iterates through each animal in the list and makes that animal speak using the method
         animals.forEach(animal -> {
